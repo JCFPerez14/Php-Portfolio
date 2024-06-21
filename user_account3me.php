@@ -317,6 +317,7 @@ $con = new database();
     <!-- Contact Start -->
     <div class="container wow fadeInUp">
             <div class="row g-5 align-items-center">
+            <h1 class="display-5 text-center mb-5 wow fadeInUp">Contact Me</h1>
                 <div class="col-lg-6 py-6 pb-0 pt-lg-0">
                 <p class="mb-2">My office:</p>
                     <h3 class="fw-bold"><?php echo ucwords(htmlspecialchars($rows['address'])); ?></h3>
@@ -335,7 +336,7 @@ $con = new database();
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="img/IMG_5122.png" alt="">
+                    <img class="img-fluid" src="img/IMG_77399.png" alt="">
                 </div>
             </div>
         </div>
