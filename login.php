@@ -78,9 +78,6 @@ if (isset($_POST['login'])) {
                             <div class="col">
                             <input type="submit" class="btn btn-primary btn-block" value="Log In" name="login">
                             </div>
-                            <div class="col">
-                            <a type="submit" class="btn btn-danger btn-block" href="signup.php">Sign Up</a>
-                            </div>
                           </div>
                         </div>
    

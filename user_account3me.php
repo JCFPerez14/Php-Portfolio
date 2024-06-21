@@ -61,7 +61,7 @@ $con = new database();
     <!-- Header End -->
 
     <div class="container my-5 wow fadeInUp" data-wow-delay="0.6s">
-        <h2 class="text-center">User Profiles</h2>
+        <h2 class="text-center">My Profiles Personal and In game</h2>
         <div class="card-container">
             <?php
             $data = $con->view();
@@ -313,6 +313,33 @@ $con = new database();
             </div>
     </div>
     <!-- About Me End -->
+
+    <!-- Contact Start -->
+    <div class="container wow fadeInUp">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+                <p class="mb-2">My office:</p>
+                    <h3 class="fw-bold"><?php echo ucwords(htmlspecialchars($rows['address'])); ?></h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Call me:</p>
+                    <h3 class="fw-bold">+639184906769</h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Mail me:</p>
+                    <h3 class="fw-bold"><?php echo ucwords(htmlspecialchars($rows['user_email'])); ?></h3>
+                    <hr class="w-100">
+                    <p class="mb-2">Follow me:</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-primary me-2" href="https://x.com/JanCarlolo" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/Zagredf01.14.03" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://www.instagram.com/jcfp14/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="img/IMG_5122.png" alt="">
+                </div>
+            </div>
+        </div>
+    <!-- Contact End -->
 
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

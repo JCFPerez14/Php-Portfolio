@@ -78,7 +78,7 @@ $error = "";
         <!-- Delete button -->
         <form action="update.php" method="POST" style="display: inline;">
             <input type="hidden" name="id" value="<?php echo $row['user_id']; ?>">
-            <button type="submit" name="delete"  class="btn btn-primary btn-sm">
+            <button type="submit" name="delete"  class="btn btn-primary btn-sm"><!-- WALANG KUWENTA -->
             <i class="fas fa-edit"></i></button>
         </form>
           </td>

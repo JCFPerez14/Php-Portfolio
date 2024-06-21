@@ -58,7 +58,8 @@ class database{
     users.user_lastname, 
     users.user_birthday, 
     users.user_sex,
-    users.about_me,  
+    users.about_me,
+    users.user_email,  
     users.user_name, 
     users.user_profile_picture, 
     CONCAT(user_address.city,' ',user_address.barangay,' ', user_address.street,' ',user_address.province) AS address
