@@ -74,6 +74,11 @@ ON
         }
     }
 
+    function viewdataskills() {
+        $con = $this->opencon();    
+        return $con->query("SELECT skills_name, skills_percentage FROM `user_skills` WHERE 1")->fetchAll();
+    }
+
     function updateUser($id, $firstname, $lastname, $birthday, $sex , $about_me, $phone_num) {
         try {
             $con = $this->opencon();
@@ -102,6 +107,8 @@ ON
             return false;
         }
     }
+
+    
  
 function validateCurrentPassword($userId, $currentPassword) {
     // Open database connection

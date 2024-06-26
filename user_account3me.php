@@ -98,100 +98,21 @@ $con = new database();
                     <p class="mb-4">Skill Issue</p>
                     <h3 class="mb-4">My Skills</h3>
                     <div class="row align-items-center">
+                    <?php $data = $con->viewdataskills();
+                    foreach ($data as $rows2) 
+                    {?>
                         <div class="col-md-6">
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">HTML</h6>
-                                    <h6 class="font-weight-bold">95%</h6>
+                                <h6 class="font-weight-bold"><?php echo htmlspecialchars($rows2['skills_name']); ?></h6>
+                                <h6 class="font-weight-bold"><?php echo htmlspecialchars($rows2['skills_percentage']); ?>%</h6>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">CSS</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">PHP</h6>
-                                    <h6 class="font-weight-bold">90%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">C#</h6>
-                                    <h6 class="font-weight-bold">80%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">C++</h6>
-                                    <h6 class="font-weight-bold">75%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="<?php echo htmlspecialchars($rows2['skills_percentage']);?>" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                          <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Javascript</h6>
-                                    <h6 class="font-weight-bold">90%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Photographer</h6>
-                                    <h6 class="font-weight-bold">95%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Videographer</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Photo Editor</h6>
-                                    <h6 class="font-weight-bold">95%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <div class="skill mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Video Editor</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php }?>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -339,6 +260,8 @@ $con = new database();
             </div>
         </div>
     <!-- Contact End -->
+
+    
 
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
