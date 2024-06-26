@@ -209,26 +209,26 @@ $con = new database();
                                 <div class="col-sm-6">
                                     <h5>UI Designer</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2018 - 2024</p>
-                                    <h6 class="mb-0">Home Made</h6>
+                                    <p class="text-primary mb-1">2019 - 2024</p>
+                                    <h6 class="mb-0">Self Taught</h6>
                                 </div>
                                 <div class="col-sm-6">
                                     <h5>Product Designer</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2018 - 2024</p>
-                                    <h6 class="mb-0">Home Made</h6>
+                                    <p class="text-primary mb-1">2019 - 2024</p>
+                                    <h6 class="mb-0">Self Taught</h6>
                                 </div>
                                 <div class="col-sm-6">
                                     <h5>Web Designer</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2018 - 2024</p>
-                                    <h6 class="mb-0">Home Made</h6>
+                                    <p class="text-primary mb-1">2019 - 2024</p>
+                                    <h6 class="mb-0">Self Taught</h6>
                                 </div>
                                 <div class="col-sm-6">
                                     <h5>Apps Designer</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2018 - 2024</p>
-                                    <h6 class="mb-0">Home Made</h6>
+                                    <p class="text-primary mb-1">2019 - 2024</p>
+                                    <h6 class="mb-0">Self Taught</h6>
                                 </div>
                                 <div class="col-sm-6">
                                     <h5>Photographer</h5>
@@ -245,13 +245,13 @@ $con = new database();
                                 <div class="col-sm-6">
                                     <h5>Photo Editor</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2018 - 2024</p>
+                                    <p class="text-primary mb-1">2019 - 2024</p>
                                     <h6 class="mb-0">NU Lipa</h6>
                                 </div>
                                 <div class="col-sm-6">
                                     <h5>Video Editor</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2018 - 2024</p>
+                                    <p class="text-primary mb-1">2019 - 2024</p>
                                     <h6 class="mb-0">NU Lipa</h6>
                                 </div>
                             </div>
@@ -261,19 +261,19 @@ $con = new database();
                                 <div class="col-sm-6">
                                     <h5>UI Design Course</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2018 - 2020</p>
+                                    <p class="text-primary mb-1">2020 - 2022</p>
                                     <h6 class="mb-0">STI</h6>
                                 </div>
                                 <div class="col-sm-6">
                                     <h5>Android Development</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2018 - 2020</p>
+                                    <p class="text-primary mb-1">2020 - 2022</p>
                                     <h6 class="mb-0">STI</h6>
                                 </div>
                                 <div class="col-sm-6">
                                     <h5>Apps Design</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2018 - 2020</p>
+                                    <p class="text-primary mb-1">2020 - 2022</p>
                                     <h6 class="mb-0">STI</h6>
                                 </div>
                                 <div class="col-sm-6">
@@ -288,8 +288,6 @@ $con = new database();
                                     <p class="text-primary mb-1">2023 - 2024</p>
                                     <h6 class="mb-0">NU Lipa</h6>
                                 </div>
-                                
-                                
                             </div>
                         </div>
                     </div>

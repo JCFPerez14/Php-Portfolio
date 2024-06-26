@@ -75,10 +75,10 @@ $error = "";
           <td><?php echo $row['address']; ?></td>
           <td>
           
-        <!-- Delete button -->
+        <!-- Update button -->
         <form action="update.php" method="POST" style="display: inline;">
             <input type="hidden" name="id" value="<?php echo $row['user_id']; ?>">
-            <button type="submit" name="delete"  class="btn btn-primary btn-sm"><!-- WALANG KUWENTA -->
+            <button type="submit" name="delete"  class="btn btn-primary btn-sm">
             <i class="fas fa-edit"></i></button>
         </form>
           </td>
@@ -105,6 +105,7 @@ $error = "";
                     <p class="card-text"><strong>Sex:</strong> <?php echo htmlspecialchars($rows['user_sex']); ?></p>
                     <p class="card-text"><strong>Username:</strong> <?php echo htmlspecialchars($rows['user_name']); ?></p>
                     <p class="card-text"><strong>Address:</strong> <?php echo ucwords(htmlspecialchars($rows['address'])); ?></p>
+                    <p class="card-text"><strong>Phone Number:</strong> <?php echo ucwords(htmlspecialchars($rows['phone_num'])); ?></p>
                     <p class="card-text"><strong>About Me </br></strong> <?php echo ucwords(htmlspecialchars($rows['about_me'])); ?></p>
                     <form action="update.php" method="post" class="d-inline">
                         <input type="hidden" name="id" value="<?php echo htmlspecialchars($rows['user_id']); ?>">

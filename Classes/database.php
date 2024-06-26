@@ -4,32 +4,7 @@ class database{
     function opencon(){
         return new PDO('mysql:host=localhost; dbname=phpcrud', 'root', '');
     }
-    /* function signupUser($firstname, $lastname, $birthday, $sex, $email, $username, $password, $profile_picture_path){
-        $con = $this->opencon();
-        // Save user data along with profile picture path to the database
-        $con->prepare("INSERT INTO users (user_firstname, user_lastname, user_birthday, user_sex, user_email, user_name, user_pass, user_profile_picture) VALUES (?,?,?,?,?,?,?,?)")->execute([$firstname, $lastname, $birthday, $sex, $about_me, $email, $username, $password, $profile_picture_path]);
-        return $con->lastInsertId();
-    }
- 
-    function insertAddress($user_id, $street, $barangay, $city, $province)
-    {
-        $con = $this->opencon();
-        return $con->prepare("INSERT INTO user_address (user_id, street, barangay, city, province) VALUES (?,?,?,?,?)")->execute([$user_id, $street, $barangay,  $city, $province]);
-         
-    }
- 
-    function signup($firstname, $lastname, $birthday, $sex, $username, $password) {
-        $con = $this->opencon();
-        $query = $con->prepare("SELECT user_name FROM users WHERE user_name = ?");
-        $query->execute([$username]);
-        $existingUser = $query->fetch();
-        if ($existingUser) {
-            return false;
-        } else {
-            return $con->prepare("INSERT INTO users (user_firstname, user_lastname, user_birthday, user_sex, user_name, user_pass) VALUES(?,?,?,?,?,?)")->execute([$firstname, $lastname, $birthday, $sex, $username, $password]);
-        }
-    } */
- 
+    
     function check($username, $password) {
         // Open database connection
         $con = $this->opencon();
@@ -99,13 +74,13 @@ ON
         }
     }
 
-    function updateUser($id, $firstname, $lastname, $birthday, $sex , $about_me) {
+    function updateUser($id, $firstname, $lastname, $birthday, $sex , $about_me, $phone_num) {
         try {
             $con = $this->opencon();
             $con->beginTransaction();
             /* $query = $con->prepare("UPDATE users SET user_firstname = ?, user_lastname = ?, user_birthday = ?, about_me = ?, user_sex = ? WHERE user_id = ?"); */
-            $query = $con->prepare("UPDATE users SET user_firstname = ?, user_lastname = ?, user_birthday = ?, user_sex = ?, about_me = ? WHERE user_id = ?");
-            $query->execute([$firstname, $lastname, $birthday, $sex, $about_me, $id]);
+            $query = $con->prepare("UPDATE users SET user_firstname = ?, user_lastname = ?, user_birthday = ?, user_sex = ?, about_me = ?, phone_num = ? WHERE user_id = ?");
+            $query->execute([$firstname, $lastname, $birthday, $sex, $about_me, $phone_num, $id]);
             $con->commit();
             return true;
         } catch (PDOException $e) {

@@ -18,7 +18,7 @@ if(isset($_POST["id"])) {
    header('location:index.php');
 }
  
-$firstname = $lastname = $birthday = $sex = $about_me = $street = $barangay = $city = $province = '';
+$firstname = $lastname = $birthday = $sex = $about_me = $phone_num = $street = $barangay = $city = $province = '';
  
 if (isset($_POST['update'])) {
   $firstname = $_POST['firstname'];
@@ -26,6 +26,7 @@ if (isset($_POST['update'])) {
   $birthday = $_POST['birthday'];
   $sex = $_POST['sex'];
   $about_me = $_POST['about_me'];
+  $phone_num = $_POST['phone_num'];
  
   $street = $_POST['street'];
   $barangay = $_POST['barangay'];
@@ -33,7 +34,7 @@ if (isset($_POST['update'])) {
   $province = $_POST['province'];
   $id = $_POST['id'];
  
-  if ($con->updateUser($id, $firstname, $lastname, $birthday, $sex, $about_me)) {
+  if ($con->updateUser($id, $firstname, $lastname, $birthday, $sex, $about_me, $phone_num)) {
     if ($con->updateUserAddress($id, $street, $barangay, $city, $province)) {
       header('location:index.php?status=success');
       exit();
@@ -95,6 +96,10 @@ if (isset($_POST['update'])) {
           <div class="form-group col-md-6">
             <label for="city">About Me:</label>
             <input type="text" class="form-control" value="<?php echo $data['about_me'];?>" name="about_me"   placeholder="Text">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="city">Phone Number:</label>
+            <input type="text" class="form-control" value="<?php echo $data['phone_num'];?>" name="phone_num"   placeholder="Text">
           </div>
         </div>
       </div>
