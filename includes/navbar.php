@@ -13,6 +13,9 @@ $current_page = basename($_SERVER['PHP_SELF']);
       <li class="nav-item <?php echo ($current_page == 'logout.php') ? 'active' : ''; ?>">
         <a class="nav-link" href="logout.php">Logout</a>
       </li>
+      <li class="nav-item <?php echo ($current_page == 'logout.php') ? 'active' : ''; ?>">
+        <a class="nav-link" href="everyone_web.php">Portfolio</a>
+      </li>
     </ul>
   </div>
 </nav>

@@ -79,6 +79,7 @@ $con = new database();
                     <form method="POST" class="d-inline">
                         <input type="hidden" name="id" value="<?php echo htmlspecialchars($rows['user_id']); ?>">
                     </form>
+                    <a class="btn btn-square btn-dark me-2" href="index.php" target="_blank"><i class="fas fa-edit"></i></a>
                 </div>
             </div>
             
@@ -251,7 +252,6 @@ $con = new database();
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-primary me-2" href="https://x.com/JanCarlolo" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/Zagredf01.14.03" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://www.instagram.com/jcfp14/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
