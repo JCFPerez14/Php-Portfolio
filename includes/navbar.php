@@ -10,11 +10,11 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item <?php echo ($current_page == 'logout.php') ? 'active' : ''; ?>">
-        <a class="nav-link" href="logout.php">Logout</a>
+    <li class="nav-item <?php echo ($current_page == 'logout.php') ? 'active' : ''; ?>">
+        <a class="nav-link" href="everyone_web.php">Portfolio</a>
       </li>
       <li class="nav-item <?php echo ($current_page == 'logout.php') ? 'active' : ''; ?>">
-        <a class="nav-link" href="everyone_web.php">Portfolio</a>
+        <a class="nav-link" href="logout.php">Logout</a>
       </li>
     </ul>
   </div>

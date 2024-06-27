@@ -18,9 +18,6 @@ $profilePicture = $_SESSION['profile_picture'] ?? 'path/to/default/profile_pictu
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item <?php echo ($current_page == 'user_account.php') ? 'active' : ''; ?>">
-        <a class="nav-link" href="user_account.php">Home<span class="sr-only">(current)</span></a>
-      </li>
       <li class="nav-item <?php echo ($current_page == 'logout.php') ? 'active' : ''; ?>">
         <a class="nav-link" href="everyone_web.php">Portfolio</a>
       </li>

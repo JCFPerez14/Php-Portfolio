@@ -79,10 +79,9 @@ $con = new database();
                     <form method="POST" class="d-inline">
                         <input type="hidden" name="id" value="<?php echo htmlspecialchars($rows['user_id']); ?>">
                     </form>
-                    <a class="btn btn-square btn-dark me-2" href="index.php" target="_blank"><i class="fas fa-edit"></i></a>
+                    <a class="btn btn-square btn-dark me-2" href="index.php"><i class="fas fa-edit"></i></a>
                 </div>
             </div>
-            
             <?php
             }
             ?>
